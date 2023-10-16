@@ -435,7 +435,16 @@ background-color: rgba(83, 52, 121, 0.4);
     color: white;
     border-radius: 5px;
     border-style: solid;
-    width: 120px;
+    width: 150px;
     
-    height: 25px;
+    height: 40px;
+  }
+  #message2{
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  height: 65px;
+  box-shadow: 0px 5px 10px 0px rgba(84, 24, 80, 0.2);
+  border-radius: 20px;
   }
