@@ -117,9 +117,9 @@ body {
   font-size: 18px;
   width: 100%;
   height: 40px;
-  border: 2px solid rgb(244,244,246);
+  border: 1.5px solid rgb(244, 244, 246);
   border-radius: 4px;
-  background-color: rgb(244,244,246);
+  background-color: rgb(244, 244, 246);
   outline: none; /*убираем рамку, которая всплывает при нажатии на форму */
 }
 input[type="radio"]:after {
@@ -129,7 +129,7 @@ input[type="radio"]:after {
   top: -2px;
   left: -1px;
   position: relative;
-  background-color: rgb(244,244,246);
+  background-color: rgb(244, 244, 246);
   content: "";
   display: inline-block;
   visibility: visible;
@@ -156,12 +156,12 @@ input[type="radio"]:checked:after {
 }
 #textarea1 {
   font-family: MuseoSansCyrl300;
-  font-size: 18px;
+  font-size: 16px;
   width: 100%;
   height: 150px;
-  border: 2px solid rgb(244,244,246);
+  border: 2px solid rgb(244, 244, 246);
   border-radius: 4px;
-  background-color: rgb(244,244,246);
+  background-color: rgb(244, 244, 246);
   outline: none; /*убираем рамку, которая всплывает при нажатии на форму */
 }
 #label_for_textarea {
@@ -229,8 +229,8 @@ footer {
   line-height: 80%;
 }
 #bday {
-  background-color: rgb(244,244,246);
-  border: rgb(244,244,246);
+  background-color: rgb(244, 244, 246);
+  border: rgb(244, 244, 246);
   color: rgb(134, 131, 131);
   outline: none;
   border-radius: 3px;
@@ -243,9 +243,11 @@ footer {
 }
 #profile_preview {
   width: 100%;
-  height: 300px;
+  height: auto;
   box-shadow: 0px 5px 10px 0px rgba(84, 24, 80, 0.2);
   border-radius: 20px;
+  box-sizing: border-box;
+  padding-bottom: 20px;
 }
 #message1 {
   padding-top: 15px;
@@ -257,189 +259,190 @@ footer {
   border-radius: 20px;
 }
 #rdiv_text2 {
-
   font-family: MuseoSansCyrl700;
   font-size: 20px;
   color: black;
 }
-#rdiv_text3{
+#rdiv_text3 {
   font-family: MuseoSansCyrl300;
   font-size: 14px;
   color: rgb(134, 131, 131);
 }
-#emoji1{
-    margin-top:30px;
-    margin-right: 20px;
+#emoji1 {
+  margin-top: 30px;
+  margin-right: 20px;
 }
-#wrapper_profile_preview{
-    display: flex;
-    justify-content: space-between;
+#wrapper_profile_preview {
+  display: flex;
+  justify-content: space-between;
 }
-#photo{
-    opacity: .3; /*прозрачность незаполненного блока*/
-    display: inline-block;
-    width: 30%;
-    height: 300px;
+#photo {
+  opacity: 0.3; /*прозрачность незаполненного блока*/
+  display: inline-block;
+  width: 30%;
+  height: 300px;
 }
-#information{
-    height: 300px;
-    width: 63%;
-    color: rgba(83, 52, 121, 0.4);
-
+#information {
+  height: auto;
+  width: 63%;
+  color: rgba(83, 52, 121, 0.4);
+  box-sizing: border-box;
+  padding-right: 5%;
+  
 }
-#photo_replace{
-    width: 100%;
-    margin: 15px 15px 15px;
-    height: 50%;
-    border: 2px dashed rgba(134, 131, 131, 0.5);
-    border-radius: 15px;
+#photo_replace {
+  width: 100%;
+  margin: 15px 15px 15px;
+  height: 50%;
+  border: 2px dashed rgba(134, 131, 131, 0.5);
+  border-radius: 15px;
 }
-#button_show_contacts{
-    margin: 0px 17px 0px; 
-    font-family: MuseoSansCyrl300;
-    background-color: rgb(106, 73, 146);
-    border-color: rgb(106, 73, 146);
-    color: white;
-    border-radius: 5px;
-    border-style: solid;
-    width: 100%;
-    cursor: pointer;
-    height: 30px;
+#button_show_contacts {
+  margin: 0px 17px 0px;
+  font-family: MuseoSansCyrl300;
+  background-color: rgb(106, 73, 146);
+  border-color: rgb(106, 73, 146);
+  color: white;
+  border-radius: 5px;
+  border-style: solid;
+  width: 100%;
+  cursor: pointer;
+  height: 40px;
 }
-#inf_name{
-    color:black;
-    font-family: MuseoSansCyrl700;
-    font-size: 24px;
-    margin-top: 15px;
-    background-color: rgb(244,244,246);
-    width: 60%;
-    height: 30px;
-    border-radius: 5px;
-}
-.small_inf{
-    margin-top: 5px;
-    display: inline-block;
-    color:black;
-    font-family: MuseoSansCyrl300;
-    font-size: 10px;
-
-    background-color: rgb(244,244,246);
-    height: 15px;
-    width:25%;
-    border-radius: 3px;
-    
-}
-#inf_phone{
-    color:black;
-    font-family: MuseoSansCyrl300;
-    font-size: 20px;
-    margin-top: 15px;
-    background-color: rgb(244,244,246);
-    width: 60%;
-    height: 25px;
-    border-radius: 5px;
-}
-#inf_personal{
-    color:black;
-    font-family: MuseoSansCyrl300;
-    font-size: 20px;
-    margin-top: 15px;
-    background-color: rgb(244,244,246);
-    width: 95%;
-    height: 20px;
-    border-radius: 5px;
-}
-#wrapper_add_inf{
-    color:black;
-    font-family: MuseoSansCyrl300;
-    font-size: 20px;
-    margin-top: 15px;
-    background-color: rgb(244,244,246);
-    width: 95%;
-    height: 120px;
-    border-radius: 5px;
-    
+#inf_name {
+  color: black;
+  font-family: MuseoSansCyrl700;
+  font-size: 14px;
+  margin-top: 15px;
+  background-color: rgb(244, 244, 246);
+  width: 60%;
+  height: 30px;
+  border-radius: 5px;
 }
 
+.small_inf {
+  margin-top: 5px;
+  display: inline-block;
+  color: black;
+  font-family: MuseoSansCyrl300;
+  font-size: 12px;
 
-.purp_line_2{
-background-color: rgba(83, 52, 121, 0.4);
+  background-color: rgb(244, 244, 246);
+  height: 15px;
+  width: 25%;
+  border-radius: 3px;
+}
+
+#inf_phone {
+  color: black;
+  font-family: MuseoSansCyrl300;
+  font-size: 20px;
+  margin-top: 15px;
+  background-color: rgb(244, 244, 246);
+  width: 60%;
+  height: 25px;
+  border-radius: 5px;
+}
+#inf_personal {
+  color: black;
+  font-family: MuseoSansCyrl300;
+  font-size: 12px;
+  margin-top: 15px;
+  background-color: rgb(244, 244, 246);
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+  max-width: inherit; /* почти как max-width:100%, но только круче*/
+}
+#wrapper_add_inf {
+  color: black;
+  font-family: MuseoSansCyrl300;
+  font-size: 20px;
+  margin-top: 15px;
+  background-color: rgb(244, 244, 246);
+  width: 100%;
+  height: 120px;
+  border-radius: 5px;
+
+}
+
+.purp_line_2 {
+  background-color: rgba(83, 52, 121, 0.4);
   width: 40%;
   height: 2px;
   line-height: 80%;
 }
-#choose_condition{
-    font-family: MuseoSansCyrl300;
-    font-size: 16px;
+#choose_condition {
+  font-family: MuseoSansCyrl300;
+  font-size: 16px;
 }
 
 .number-selector {
-    font-family: MuseoSansCyrl300;
-    font-size: 18px;
-    background-color: #f2f2f2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-  }
-  .number-selector input {
-    display: none;
-  }
-  .number-selector label {
-    position: relative;
-    width: 50px;
-    height: 50px;
-    margin: 0 10px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    text-align: center;
-    line-height: 50px;
-    cursor: pointer;
-  }
-  .number-selector input:checked + label {
-    
-    background-color: rgb(83, 52, 121);
-    color: #fff;
-  }
-  .labels{
-    font-family: MuseoSansCyrl300;
-    font-size: 14px;
-    color: rgb(99, 97, 97);
-  }
-  #text_radio1{
-    font-family: MuseoSansCyrl300;
-    font-size: 16px;
-  }
-  #select1{
-    background-color: rgb(244,244,246);
-    outline: none;
-    border-color: rgb(244,244,246);
-    border-radius: 5px;
-    width:100%;
-    height:40px;
-  }
-  #select2{
-    background-color: rgb(244,244,246);
-    outline: none;
-    border-color: rgb(244,244,246);
-    border-radius: 5px;
-    width:100%;
-    height:40px;
-  }
-  #button_continue{
-    float:right;
-    opacity: 0.4;
-    font-family: MuseoSansCyrl300;
-    background-color: rgb(106, 73, 146);
-    border-color: rgb(106, 73, 146);
-    color: white;
-    border-radius: 5px;
-    border-style: solid;
-    width: 150px;
-    cursor: pointer;
-    height: 40px;
-  }
-  #message2{
+  font-family: MuseoSansCyrl300;
+  font-size: 18px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.number-selector input {
+  display: none;
+}
+.number-selector label {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+.number-selector input:checked + label {
+  background-color: rgb(83, 52, 121);
+  color: #fff;
+}
+.labels {
+  font-family: MuseoSansCyrl300;
+  font-size: 14px;
+  color: rgb(99, 97, 97);
+}
+#text_radio1 {
+  font-family: MuseoSansCyrl300;
+  font-size: 16px;
+}
+#select1 {
+  background-color: rgb(244, 244, 246);
+  outline: none;
+  border-color: rgb(244, 244, 246);
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+}
+#select2 {
+  background-color: rgb(244, 244, 246);
+  outline: none;
+  border-color: rgb(244, 244, 246);
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+}
+#button_continue {
+  float: right;
+  opacity: 0.4;
+  font-family: MuseoSansCyrl300;
+  background-color: rgb(106, 73, 146);
+  border-color: rgb(106, 73, 146);
+  color: white;
+  border-radius: 5px;
+  border-style: solid;
+  width: 150px;
+  cursor: pointer;
+  height: 40px;
+}
+#message2 {
   padding-top: 15px;
   padding-left: 15px;
   padding-bottom: 15px;
@@ -447,4 +450,59 @@ background-color: rgba(83, 52, 121, 0.4);
   height: 65px;
   box-shadow: 0px 5px 10px 0px rgba(84, 24, 80, 0.2);
   border-radius: 20px;
-  }
+}
+
+.error-message {
+  font-family: MuseoSansCyrl300;
+  color: rgba(214, 58, 58);
+  display: block;
+  font-size: 14px;
+  float: right;
+}
+
+.placeholder-container {
+  position: relative;
+  margin-top: 10px;
+}
+.placeholder-container input{
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 16px;
+  height: 50px;
+  padding: 0 10px;
+}
+.placeholder-container textarea{
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 16px;
+  height: 50px;
+  padding: 10px 10px;
+}
+.placeholder-container label {
+  font-family: MuseoSansCyrl300;
+  color: rgb(134, 131, 131);
+  font-size: 18px;
+
+  line-height: 15px;
+  padding: 5px 7px;
+  pointer-events: none;
+  position: absolute;
+  transition: all 200ms;
+  top: 12px;
+  left: 0px;
+}
+.placeholder-container input:focus + label,
+.placeholder-container input:not(:placeholder-shown) + label {
+  top: -20px;
+  left: 0px;
+  font-size: 14px;
+  
+}
+.placeholder-container textarea:focus + label,
+.placeholder-container textarea:not(:placeholder-shown) + label {
+  top: -20px;
+  left: 0px;
+  font-size: 14px;
+  
+}
+

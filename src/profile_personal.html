@@ -32,33 +32,34 @@
       <br />
       <div id="main_wrapper">
         <div id="left_part">
-          <form>
+          <form id="mainForm">
             <div id="upload_space">
               <span id="form_text1">Аватар профиля</span>
               <br />
-              <input type="file" id="actual_btn" hidden />
+              <input type="file" id="actual_btn" accept="image/jpeg, image/png" hidden />
               <label id="label_btn" for="actual_btn">Загрузить</label>
               <br />
               <span id="form_text2"
-                >Загрузите фотографию весом не более 10 мб</span
-              >
+                >Загрузите фотографию весом не более 10 мб</span>
             </div>
             <br />
-
-            <input
+            <div class="placeholder-container">
+              <input
+              id="inpName"
               type="text"
               class="input_fields"
-              placeholder="Имя и фамилия"
+              placeholder=" "
             />
-
-            <br />
+            <label id="label_name">Имя и фамилия</label>
+            </div>
+            <span class="error-message" id="nameError"></span>
             <br />
 
             <div id="choose_gender">
-              <input type="radio" id="male" name="gender" />
+              <input type="radio" id="male" name="gender" class="gender_choice"/>
               <label for="male">Парень</label>
-              <input type="radio" id="female" name="gender" />
-              <label for="male">Девушка</label>
+              <input type="radio" id="female" name="gender" class="gender_choice"/>
+              <label for="female">Девушка</label>
             </div>
 
         
@@ -69,29 +70,37 @@
               <input type="date" id="bday" name="bday"/>
             </div>
 
-         
+            
             <br />
-
-            <input type="text" class="input_fields" placeholder="Телеграм" />
-
+            <div class="placeholder-container">
+              <input type="text" class="input_fields" placeholder=" " id="inpTelegram"/>
+              <label id="label_telegram">Телеграм</label>
+            </div>
+            
+            <span class="error-message" id="telegramError"></span>
+    
             <br />
-            <br />
-
-            <input
+            <div class="placeholder-container">
+              <input
               type="text"
               class="input_fields"
-              placeholder="Номер телефона"
+              placeholder=" "
+              id="inpPhoneNumber"
             />
-
+            <label id="label_phone">Номер телефона</label>
+            </div>
+           
+            <span class="error-message" id="phoneError"></span>
             <br />
-            <br />
-
-            <textarea id="textarea1" placeholder="О себе"></textarea><br />
+            <div class="placeholder-container">
+              <textarea id="textarea1" placeholder=" "></textarea>
+              <label id="label_textarea">О себе</label>
+            </div>
+            <span class="error-message" id="textareaError"></span><br />
             <label for="textarea1" id="label_for_textarea"
               >Например: Редко готовлю, но люблю ботать на кухне по ночам. Хочу
               завести собаку. Очень люблю читать, играть в хорроры и смотреть
-              аниме. Открыт к общению и взаимопомощи.</label
-            >
+              аниме. Открыт к общению и взаимопомощи.</label>
             <br />
             <br />
           </form>
@@ -115,9 +124,11 @@
                         <button id="button_show_contacts">Показать контакты</button>
                     </div>
                     <div id="information">
-                        <div id="inf_name"></div>
+                        <div id="inf_name">
+                          <span id="inf_name_text"></span>
+                        </div>
                         
-                        <span class="small_inf"></span> •
+                        <span id="gender_field" class="small_inf"></span> •
                         <span id="inf_age" class="small_inf"></span> •
                         <span id="inf_telegram" class="small_inf"></span>
                         <div id="inf_phone"></div>
@@ -195,6 +206,6 @@
       
     </footer>
     <div class="big_line"></div>
-    <script src="homeet.js"></script>
+    <script src="js/homeet.js"></script>
   </body>
 </html>

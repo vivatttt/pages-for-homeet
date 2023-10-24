@@ -1,0 +1,18 @@
+.error-message {
+  color: rgb(214, 58, 58);
+  display: block;
+  font-size: 10px;
+  
+}
+
+.input_fields {
+
+  font-size: 10px;
+  width: 120px;
+  height: 10px;
+  border: 1.5px solid rgb(244, 244, 246);
+  border-radius: 4px;
+  background-color: rgb(244, 244, 246);
+  /* background-color: rgba(204, 112, 112, 0.1); */
+  outline: none; /*убираем рамку, которая всплывает при нажатии на форму */
+}
