@@ -208,6 +208,7 @@ footer {
 }
 
 .foot_wrapper {
+  margin-left: 15px;
   display: flex;
   justify-content: space-between;
 }
@@ -335,11 +336,14 @@ footer {
   border-radius: 3px;
 }
 
-#inf_phone {
+#inf_work {
   color: black;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 3px 5px 5px;
   font-family: MuseoSansCyrl300;
-  font-size: 20px;
-  margin-top: 15px;
+  font-size: 16px;
+  margin-top: 10px;
   background-color: rgb(244, 244, 246);
   width: 60%;
   height: 25px;
@@ -396,30 +400,43 @@ footer {
   background-color: rgb(83, 52, 121);
   color: #fff;
 }
+
 .labels {
   font-family: MuseoSansCyrl300;
   font-size: 14px;
-  color: rgb(99, 97, 97);
+  color: rgb(134, 131, 131);
+  margin-left: 7px;
 }
+
 #text_radio1 {
   font-family: MuseoSansCyrl300;
   font-size: 16px;
 }
 #select1 {
+  font-size: 16px;
+  color: black;
+  padding-left: 5px;
+  padding-bottom: 2px;
+  font-family: MuseoSansCyrl300;
   background-color: rgb(244, 244, 246);
   outline: none;
   border-color: rgb(244, 244, 246);
   border-radius: 5px;
   width: 100%;
-  height: 40px;
+  height: 50px;
 }
 #select2 {
+  font-size: 16px;
+  color: black;
+  padding-left: 5px;
+  padding-bottom: 2px;
+  font-family: MuseoSansCyrl300;
   background-color: rgb(244, 244, 246);
   outline: none;
   border-color: rgb(244, 244, 246);
   border-radius: 5px;
   width: 100%;
-  height: 40px;
+  height: 50px;
 }
 #button_continue {
   opacity: 0.4;
@@ -437,9 +454,24 @@ footer {
   float: right;
   left: 150%;
 }
+#button_continue_2 {
+  opacity: 0.4;
+  font-family: MuseoSansCyrl300;
+  background-color: rgb(106, 73, 146);
+  border-color: rgb(106, 73, 146);
+  color: white;
+  border-radius: 5px;
+  border-style: solid;
+  width: 150px;
+  cursor: pointer;
+  height: 40px;
+  position: relative;
+  /*извращаемся со смещением кнопки, тк ранее очень плохо сверстали (форму поместили в правую часть), а теперь уже не исправить*/
+  float: right;
+  left: 150%;
+}
 #message2 {
   padding-top: 15px;
-  padding-left: 15px;
   padding-bottom: 15px;
   width: 100%;
   height: 65px;
@@ -540,3 +572,4 @@ footer {
   content: 'Свернуть';
 
 }
+

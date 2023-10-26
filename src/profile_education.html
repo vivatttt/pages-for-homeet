@@ -36,7 +36,7 @@
             
       <div id="main_wrapper">
         <div id="left_part">
-          <form>
+          <form id="main_form_2">
             <div id="choose_condition">
                 <input type="radio" id="student" name="condition" />
                 <label for="male">Студент / выпускник</label>
@@ -64,45 +64,72 @@
               </div>
               <br>
               <div id="text_radio1">
-              <input type="radio" id="check_finished" name="number"> <label for="radio">Уже окончил Вышку</label>
+              <input type="radio" id="check_finished" name="number" value="Уже окончил Вышку"> <label for="radio">Уже окончил Вышку</label>
 
               </div>
               <br>
               
               <label for="select1" class="labels">Ступень образования</label><br>
               <select id="select1">
+                <option style="display:none">Ступень образования</option>
+                <option value="Бакалавриат">Бакалавриат</option>
+                <option value="Магистратура">Магистратура</option>
                 
               </select>
               <br>
               <br>
               <label for="select2" class="labels">Факультет</label><br>
               <select id="select2">
-                
+                <option style="display:none">Факультет</option>
+                <option value="Высшая школа бизнеса">Высшая школа бизнеса</option>
+                <option value="Факультет гуманитарных наук">Факультет гуманитарных наук</option>
+                <option value="Факультет права">Факультет права</option>
+                <option value="Факультет химиии">Факультет химиии</option>
+                <option value="Факультет креативных индустрий">Факультет креативных индустрий</option>
+                <option value="Факультет биологии и биотехнологи">Факультет биологии и биотехнологии</option>
+                <option value="Факультет экономических нау">Факультет экономических наук</option>
+                <option value="МИЭМ имени А.Н.Тихонов">МИЭМ имени А.Н.Тихонова</option>
+                <option value="Факультет компьютерных наук">Факультет компьютерных наук</option>
+                <option value="Факультет математики">Факультет математики</option>
+                <option value="Школа инстранных языков">Школа инстранных языков</option>
+                <option value="Школа дизайна">Школа дизайна</option>
+                <option value="Факультет физики">Факультет физики</option>
+                <option value="Институт когнитивных нейронаук">Институт когнитивных нейронаук</option>
+                <option value="Институт торговой политики">Институт торговой политики</option>
               </select>
               <br />
               <br />
-
             
 
-              <label for="OP" class="labels">Образовательная программа</label><br>
-            <input
+            <div class="placeholder-container">
+              <input
               type="text"
               class="input_fields"
-              placeholder="Образовательная программа"
+              placeholder=" "
               id="OP"
             />
-            <br />
-              <br />
-            <input
-              type="text"
-              class="input_fields"
-              placeholder="Работа"
-              id="OP"
-            />
+            <label id="label_op">Образовательная программа</label>
+            </div>  
+            <span class="error-message" id="opError"></span>
 
+            <br />
+           
+            <div class="placeholder-container">
+              <input
+              type="text"
+              class="input_fields"
+              placeholder=" "
+              id="Work"
+            />
+            <label id="label_work">Работа</label>
+            </div>
+            <span class="error-message" id="workError"></span>
            
             <br />
             <br />
+            <br />
+            <br />
+            <button id="button_continue_2">Продолжить</button>
           </form>
           <br />
           <br />
@@ -128,8 +155,9 @@
                         
                         <span class="small_inf"></span> •
                         <span id="inf_age" class="small_inf"></span> •
-                        <span id="inf_telegram" class="small_inf"></span>
-                        <div id="inf_phone"></div>
+                        <span id="inf_education" class="small_inf"></span>
+                        <br>
+                        <div id="inf_work"></div>
                         <div id="inf_personal"></div>
                         <div id="wrapper_add_inf"></div>
                     </div>
@@ -159,7 +187,7 @@
       <br>
       <br>
       <br>
-      <button id="button_continue">Продолжить</button>
+      
     </main>
 
     <footer>
@@ -205,6 +233,6 @@
       
     </footer>
     <div class="big_line"></div>
-    <script src="homeet.js"></script>
+    <script src="js/profile_education.js"></script>
   </body>
 </html>
