@@ -422,7 +422,6 @@ footer {
   height: 40px;
 }
 #button_continue {
-  float: right;
   opacity: 0.4;
   font-family: MuseoSansCyrl300;
   background-color: rgb(106, 73, 146);
@@ -433,6 +432,10 @@ footer {
   width: 150px;
   cursor: pointer;
   height: 40px;
+  position: relative;
+  /*извращаемся со смещением кнопки, тк ранее очень плохо сверстали (форму поместили в правую часть), а теперь уже не исправить*/
+  float: right;
+  left: 150%;
 }
 #message2 {
   padding-top: 15px;
