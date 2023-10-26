@@ -220,17 +220,25 @@ document.addEventListener("DOMContentLoaded", function () {
     placeholder.style.color = colorPlaceholder;
 
     var textareaField = document.getElementById("inf_personal");
+    var textareaFieldP = document.getElementById("p_inf_personal");
+
     if(textarea != ""){
-        textareaField.innerHTML = textarea;
+        textareaFieldP.innerHTML = textarea;
         textareaField.style.background = "#ffffff";
         textareaField.style.width = "auto";
         textareaField.style.height = "auto";
+        document.getElementById("span_inf_personal").style.display = "block";
     } else{
-        textareaField.innerHTML = "";
+        textareaFieldP.innerHTML = "";
         textareaField.style.background = "#f4f4f6";
         textareaField.style.width = 100 + "%";
+        document.getElementById("span_inf_personal").style.display = "none";
         textareaField.style.height = 20 + "px";
     } 
+  });
+
+  document.getElementById("span_inf_personal").addEventListener("click", function(){
+    document.getElementById("inf_personal").classList.toggle('active');
   });
 
   document.getElementById("mainForm").addEventListener("submit", function (event) {

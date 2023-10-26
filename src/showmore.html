@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/showmore.css" />
+  </head>
+  <body>
+
+    <div id="container">
+      <h4>Readmore</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisic
+        
+    
+      </p>
+      <span id="span">
+
+      </span>
+    </div>
+
+    <script>
+        document.getElementById("span").addEventListener("click", function(){
+            document.getElementById("container").classList.toggle('active');
+        });
+    </script>
+  </body>
+</html>
